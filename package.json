@@ -1,0 +1,14 @@
+{
+  "name": "lead-radar",
+  "version": "1.0.0",
+  "description": "Lead intelligence engine for eSolicitors.ie",
+  "type": "commonjs",
+  "scripts": {
+    "poll":   "node services/poller.js",
+    "score":  "node services/scorer.js",
+    "draft":  "node services/drafter.js",
+    "api":    "node services/api.js",
+    "run-all": "node services/poller.js && node services/scorer.js && node services/drafter.js"
+  },
+  "dependencies": {}
+}
