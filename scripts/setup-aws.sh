@@ -122,9 +122,8 @@ echo ""
 echo "Enter your API keys (paste and hit Enter):"
 echo ""
 
-read -p "Gemini API Key: " GEMINI_KEY="AIzaSyAwXrtWfobGtUcinm7i4xkNRtV0lJk--zw"
-read -p "Anthropic API Key: " ANTHROPIC_KEY="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"
-
+GEMINI_KEY="AIzaSyARPTEVAwztA7p9f71YsP61vpivdSAWTRo"
+ANTHROPIC_KEY="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"
 ENV_VARS="Variables={GEMINI_API_KEY=$GEMINI_KEY,ANTHROPIC_API_KEY=$ANTHROPIC_KEY,DYNAMODB_REGION=$REGION,DYNAMODB_TABLE_LEADS=leads,DYNAMODB_TABLE_SEEN=seen_posts,DYNAMODB_TABLE_QUEUE=approval_queue}"
 
 for FNAME in lead-radar-poller lead-radar-scorer lead-radar-drafter lead-radar-api; do
